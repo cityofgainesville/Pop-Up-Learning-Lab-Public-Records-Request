@@ -10,7 +10,7 @@ body {
 }*/
 
 /* Mobile Styles */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     background-color: #F09A9D !important; /* Red */
   }
@@ -22,7 +22,7 @@ body {
 }
 
 /* Tablet Styles */
-@media (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
     background-color: #F5CF8E !important; /* Yellow */
   }
@@ -34,7 +34,7 @@ body {
 }
 
 /* Desktop Styles */
-@media (min-width: 961px) {
+@media only screen and (min-width: 961px) {
   body {
     background-color: #B2D6FF !important; /* Blue */
   }
