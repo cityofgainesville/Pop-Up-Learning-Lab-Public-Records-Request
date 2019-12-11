@@ -12,7 +12,7 @@ function stateProgress() {
 			if($(window).width() < 961) {
 				document.getElementById(state + "-bullet").style["line-height"] = "2.2em";
 				document.getElementById(state + "-bullet").style["height"] = "2.2em";
-				document.getElementById(state + "-bullet").style["width"] = "2.2sem";
+				document.getElementById(state + "-bullet").style["width"] = "2.2em";
 			}
 			else {
 				document.getElementById(state + "-bullet").style["line-height"] = "2.8em";
@@ -144,19 +144,25 @@ var answer;
 document.getElementById("start").onclick = function() {
 	document.getElementById("welcome-screen").style["display"] = "none";
 	document.getElementById("game").style["display"] = "flex";
-	document.getElementById("play").style["background"] = "#044b69";
+	if($(window).width() > 961) {
+		document.getElementById("play").style["background"] = "#044b69";
+	}
 }
 
 document.getElementById("play-again-1").onclick = function() {
 	document.getElementById("lose-screen").style["display"] = "none";
 	document.getElementById("game").style["display"] = "flex";
-	document.getElementById("play").style["background"] = "#044b69";
+	if($(window).width() > 961) {
+		document.getElementById("play").style["background"] = "#044b69";
+	}
 }
 
 document.getElementById("play-again-2").onclick = function() {
 	document.getElementById("win-screen").style["display"] = "none";
 	document.getElementById("game").style["display"] = "flex";
-	document.getElementById("play").style["background"] = "#044b69";
+	if($(window).width() > 960) {
+		document.getElementById("play").style["background"] = "#044b69";
+	}
 }
 
 function answerChoice(index) {
@@ -234,6 +240,7 @@ document.getElementById("submit").onclick = function() {
 		nextQ = false;
 		document.getElementById(iterator + 1 + "q").style["background-color"] = "#face00";
 		document.getElementById(iterator + 1 + "q").style["color"] = "black";
+		document.getElementById("current").innerHTML = document.getElementById(iterator + 1 + "q").innerHTML;
 		document.getElementById("q").innerHTML = questions[iterator];
 		document.getElementById("a-text").innerHTML = answerA[iterator];
 		document.getElementById("b-text").innerHTML = answerB[iterator];
@@ -245,6 +252,19 @@ document.getElementById("submit").onclick = function() {
 		document.getElementById("error").style["display"] = "";
 	}
 	
+}
+
+
+document.getElementById("expand").onclick = function() {
+		document.getElementById("left-column").style["display"] = "flex";
+		document.getElementById("right-column").style["display"] = "none";
+		document.getElementById("play").style["background"] = "#074B69";
+}
+
+document.getElementById("expand-mobile").onclick = function() {
+		document.getElementById("left-column").style["display"] = "none";
+		document.getElementById("right-column").style["display"] = "flex";
+		document.getElementById("play").style["background"] = "white";
 }
 
 /*__________________ACT__________________________*/

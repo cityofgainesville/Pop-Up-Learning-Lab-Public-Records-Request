@@ -47,48 +47,50 @@
         <div class="content" id="learn" >
         	<div id="wrap">
 	        	<div id="button-container-left" class="button-container">
-					<button id="learn-prev" type="button" class="btn btn-link" disabled="true">
-						<i class="fal fa-chevron-left" id="prevIcon" ></i>
-					</button>
-				</div>
-				<div id="learn-img-container">
-					<img class="learn-img" id="1" src="./imgsLearn/1.png">
-				</div>
+    					<button id="learn-prev" type="button" class="btn btn-link" disabled="true">
+    						<i class="fal fa-chevron-left" id="prevIcon" ></i>
+    					</button>
+    				</div>
+            <div>
+      				<div id="learn-img-container">
+      					<img class="learn-img" id="1" src="./imgsLearn/1.png">
+      				</div>
+              <div class="cs_bullets">
+                <label class='num0' for="learn-img-1">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num1' for="learn-img-2">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num2' for="learn-img-3">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num3' for="learn-img-4">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num4' for="learn-img-5">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num5' for="learn-img-6">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num6' for="learn-img-7">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num7' for="learn-img-8">
+                  <span class="cs_point"></span>
+                </label>
+                <label class='num8' for="learn-img-9">
+                  <span class="cs_point"></span>
+                </label>
+              </div>
+            </div>
 	        	<div id="button-container-right" class="button-container">
-					<button id="learn-next" type="button" class="btn btn-link">
-						<i class="fal fa-chevron-right" id="nextIcon" ></i>
-					</button>
-				</div>
-			</div>
-			<div class="cs_bullets">
-				<label class='num0' for="learn-img-1">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num1' for="learn-img-2">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num2' for="learn-img-3">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num3' for="learn-img-4">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num4' for="learn-img-5">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num5' for="learn-img-6">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num6' for="learn-img-7">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num7' for="learn-img-8">
-					<span class="cs_point"></span>
-				</label>
-				<label class='num8' for="learn-img-9">
-					<span class="cs_point"></span>
-				</label>
-			</div>
+    					<button id="learn-next" type="button" class="btn btn-link">
+    						<i class="fal fa-chevron-right" id="nextIcon" ></i>
+    					</button>
+    				</div>
+			    </div>
         </div>
         <div class="content" id="play" style="display: none">
           <div class="screen" id="welcome-screen">
@@ -105,25 +107,45 @@
           </div>
           <div id="game" style="display: none">
           <div id="left-column">
-            <p class="question" id="10q">10 $1 million</p>
-            <p class="question" id="9q">&nbsp; 9 $500,000</p>
-            <p class="question" id='8q'>&nbsp; 8 $250,000</p>
-            <p class="question" id='7q'>&nbsp; 7 $125,000</p>
-            <p class="question" id='6q'>&nbsp; 6 $64,000</p>
+            <div id="play-title-mobile">
+                <strong>
+                  Who Wants to Be a Millionaire?
+                </strong>
+                <button id="expand-mobile">
+                  <i class="fal fa-angle-up"></i>
+                </button>
+            </div>
+            <p class="question" id="10q">(10) $1 million</p>
+            <p class="question" id="9q">&nbsp; (9) $500,000</p>
+            <p class="question" id='8q'>&nbsp; (8) $250,000</p>
+            <p class="question" id='7q'>&nbsp; (7) $125,000</p>
+            <p class="question" id='6q'>&nbsp; (6) $64,000</p>
             
-            <p class="question" id='5q'>&nbsp; 5 $32,000</p>
-            <p class="question" id='4q'>&nbsp; 4 $16,000</p>
-            <p class="question" id='3q'>&nbsp; 3 $8,000</p>
-            <p class="question" id='2q'>&nbsp; 2 $4,000</p>
-            <p class="question" id='1q' style="background: #face00; color: black;">&nbsp; 1 $2,000</p>
+            <p class="question" id='5q'>&nbsp; (5) $32,000</p>
+            <p class="question" id='4q'>&nbsp; (4) $16,000</p>
+            <p class="question" id='3q'>&nbsp; (3) $8,000</p>
+            <p class="question" id='2q'>&nbsp; (2) $4,000</p>
+            <p class="question" id='1q' style="background: #face00; color: black;">&nbsp; (1) $2,000</p>
           </div>
           <div id="right-column" >
           	<div id='question-wrap'>
           		<div id="play-title">
-          			<strong>
-		      	  Who Wants to Be a Millionaire?
-		      	</strong>
-		      	</div>
+                <div>
+            			<strong>
+      		      	  Who Wants to Be a Millionaire?
+      		      	</strong>
+                  <div id="currentQ">
+                    <div>
+                    <strong id="current">
+                    &nbsp; (1) $2,000
+                  </strong>
+                </div>
+                  <button id="expand">
+                  <i class="fal fa-angle-down"></i>
+                </button>
+                  </div>
+                </div>
+		      	   </div>
 	            <div id="question">
                 <div id="error" style="display:none;color: red;">Please select an answer.</div>
                 <div id="q"><div>What is included in public records?</div></div>
@@ -160,7 +182,7 @@
   			          </div>
                 </div>
 			      </div>
-			      <div style="width: fit-content; margin: 2% auto;">
+			      <div id="submit-wrap">
 		              <button id="submit" type="submit" class="btn btn-outline-primary">SUBMIT</button>
 		          </div>
 		        </div>
@@ -180,10 +202,10 @@
                 <button type="button" id="city-ordinances" class="btn btn-dark act-btn">City Ordinances</button>
               </div>
               <div class="act-btn-container">
-                <button type="button" id="abo" class="btn btn-dark act-btn">Advisory Board Openings</button>
+                <button type="button" id="events-calendar" class="btn btn-dark act-btn">Events Calendar</button>
               </div>
               <div class="act-btn-container">
-                <button type="button" id="events-calendar" class="btn btn-dark act-btn">Events Calendar</button>
+                <button type="button" id="abo" class="btn btn-dark act-btn">Advisory Board Openings</button>
               </div>
             </div>
             <div id='right-btns' class="act-col">
