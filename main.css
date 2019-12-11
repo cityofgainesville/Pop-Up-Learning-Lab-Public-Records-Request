@@ -125,7 +125,7 @@ body {
     justify-content: space-between;
     align-items: stretch;
     padding-bottom: 0;
-    min-height: 425px;
+    min-height: 80vh;
   }
   
   #left-column {
@@ -273,7 +273,7 @@ body {
 
   #currentQ, #play-title-mobile {
     display: flex;
-    width: 100%;
+    //width: 100%;
     line-height: 3;
     justify-content: center;
     align-items: center;
@@ -484,7 +484,7 @@ body {
     justify-content: space-between;
     align-items: stretch;
     padding-bottom: 0;
-    min-height: 425px;
+    min-height: 80vh;
   }
 
   #left-column {
@@ -632,7 +632,7 @@ body {
 
   #currentQ, #play-title-mobile {
     display: flex;
-    width: 100%;
+    //width: 100%;
     line-height: 3;
     justify-content: center;
     align-items: center;
@@ -1136,6 +1136,7 @@ button:focus {
   text-align: center;
   font-weight: bolder;
   margin-top: 10px;
+  max-width: 2.2em;
 }
 
 .bullet-wrap {
