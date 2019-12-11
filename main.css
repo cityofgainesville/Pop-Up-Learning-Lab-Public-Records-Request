@@ -401,8 +401,9 @@ body {
 
 
   .content {
-    width: 97%;
+    width: 100%;
     height: fit-content;
+    padding: 5px;
     //position: absolute;
     margin: 0 auto;
     background-color: white;
@@ -773,9 +774,9 @@ body {
   }
 
   .content {
-    width: 100%;
+    width: 97%;
     height: fit-content;
-    padding: 5px;
+    //padding: 5px;
     //position: absolute;
     margin: 0 auto;
     background-color: white;
