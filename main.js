@@ -128,6 +128,35 @@ document.getElementById("learn-next").onclick = function() {
 	changeBullets(learnImgIndex);	
 }
 
+document.getElementById("learn-prev-mobile").onclick = function() {
+	learnImgIndex = learnImgIndex - 1;
+	if(learnImgIndex == 1) {
+		document.getElementById("learn-prev-mobile").disabled = "true";
+	}
+	if(learnImgIndex != 9){
+		document.getElementById("learn-next-mobile").disabled = "";
+	}
+	document.getElementById(learnImgIndex + 1).id = learnImgIndex;
+	document.getElementById(learnImgIndex).src = "./imgsLearn/" + learnImgIndex + ".png";
+	changeBullets(learnImgIndex);
+}
+
+document.getElementById("learn-next-mobile").onclick = function() {
+	learnImgIndex = learnImgIndex + 1;
+	if(learnImgIndex == 9) {
+		document.getElementById("learn-next-mobile").disabled = "true";
+		next = true;
+		document.getElementById("next").disabled = "";
+	}
+	if(learnImgIndex != 1){
+		document.getElementById("learn-prev-mobile").disabled = "";
+	}
+
+	document.getElementById(learnImgIndex - 1).id = learnImgIndex;
+	document.getElementById(learnImgIndex).src = "./imgsLearn/" + learnImgIndex + ".png";
+	changeBullets(learnImgIndex);	
+}
+
 
 /*__________________PLAY__________________________*/
 
