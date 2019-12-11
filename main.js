@@ -9,17 +9,22 @@ function stateProgress() {
 	var states = ['learn','play','act'];
 	for(var i=0; i < states.length; i++){
 		if(states[i] == state){
-			document.getElementById(state + "-bullet").style["line-height"] = "2.8em";
-			document.getElementById(state + "-bullet").style["height"] = "2.8em";
-			document.getElementById(state + "-bullet").style["width"] = "2.8em";
+			if($(window).width() < 961) {
+				document.getElementById(state + "-bullet").style["line-height"] = "2.2em";
+				document.getElementById(state + "-bullet").style["height"] = "2.2em";
+				document.getElementById(state + "-bullet").style["width"] = "2.2sem";
+			}
+			else {
+				document.getElementById(state + "-bullet").style["line-height"] = "2.8em";
+				document.getElementById(state + "-bullet").style["height"] = "2.8em";
+				document.getElementById(state + "-bullet").style["width"] = "2.8em";
+			}
 			document.getElementById(state + "-bullet").style["box-shadow"] = "0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 6px 0 rgba(0, 0, 0, 0.19)";
-			document.getElementById(state + "-name").style["width"] = "2.8em";
 		}
 		else {
 			document.getElementById(states[i] + "-bullet").style["line-height"] = "2em";
 			document.getElementById(states[i] + "-bullet").style["height"] = "2em";
 			document.getElementById(states[i] + "-bullet").style["width"] = "2em";
-			document.getElementById(states[i] + "-name").style["width"] = "2em";
 			document.getElementById(states[i] + "-bullet").style["box-shadow"] = "none";
 		}
 	}
