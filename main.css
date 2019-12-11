@@ -289,7 +289,7 @@ body {
   }
 
   #expand-mobile, #expand {
-    //padding-right: 0;
+    padding-right: 0;
     //padding-left: 4%;
   }
 
@@ -398,11 +398,11 @@ body {
   }
 
   #prevIcon{
-    //font-size: x-large;
+    font-size: medium;
   }
 
   #nextIcon{
-    //font-size: x-large;
+    font-size: medium;
   }
 
 
@@ -471,7 +471,7 @@ body {
     transform: translate(-50%, -50%);*/
   }
 
-  #learn {
+  .learn-img {
     padding: 5px;
   }
 
@@ -648,7 +648,7 @@ body {
   }
 
   #expand-mobile, #expand {
-    //padding-right: 0;
+    padding-right: 0;
     //padding-left: 4%;
   }
 
@@ -1162,7 +1162,7 @@ button:focus {
   display: block !important;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 10vh;
   border: 1px solid #face00 !important;
   background: #face00 !important;
   font-weight: bold !important;
