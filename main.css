@@ -719,7 +719,7 @@ body {
     display: inline-block;
     background: none;
     border: none;
-    //margin-left: 3px;
+    margin-left: 0px;
   }
 
   .container {
@@ -744,12 +744,24 @@ body {
     background-color: black !important; /* Red */
   }
 
+  .content {
+    padding-bottom: 15px; 
+  }
+
   .button-container-mobile {
     display: none;
   }
 
   .button-container {
     display: inline-block;
+  }
+
+  #prevIcon{
+    font-size: x-large;
+  }
+
+  #nextIcon{
+    font-size: x-large;
   }
 }
 
