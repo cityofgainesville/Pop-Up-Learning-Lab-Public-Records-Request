@@ -18,6 +18,9 @@ body {
 
   button {
     font-size: 14px !important;
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
 
   .learn-img {
@@ -369,6 +372,9 @@ body {
 
   button {
     font-size: 14px !important;
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
 
   #logo {
@@ -403,7 +409,6 @@ body {
   .content {
     width: 100%;
     height: fit-content;
-    padding: 5px;
     //position: absolute;
     margin: 0 auto;
     background-color: white;
@@ -445,7 +450,7 @@ body {
   .wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 2.5% 0;
+    margin: 3% 0;
     //max-height: 2em;
     margin-bottom: 2.5%;
   }
@@ -464,6 +469,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);*/
+  }
+
+  #learn {
+    padding: 5px;
   }
 
   #play {
