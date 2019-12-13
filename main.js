@@ -39,8 +39,10 @@ document.getElementById("previous").onclick = function() {
 		document.getElementById(state).style["display"] = "none";
 		state = "learn";
 		document.getElementById(state).style["display"] = "";
+		document.getElementById("previous").style["display"] = "none";
 		document.getElementById("previous").disabled = "true";
 		document.getElementById("next").disabled = "";
+		document.getElementById("next").style["display"] = "";
 		next = true;
 	}
 	else if(state == "act") {
@@ -48,6 +50,7 @@ document.getElementById("previous").onclick = function() {
 		state = "play";
 		document.getElementById(state).style["display"] = "flex";
 		document.getElementById("next").disabled = "";
+		document.getElementById("next").style["display"] = "";
 		document.getElementById("next").innerHTML = "NEXT";
 		document.getElementById("next").style["background-color"] = "#074b69";
 		document.getElementById("next").style["border"] = "1px solid #074b69";
@@ -60,12 +63,14 @@ document.getElementById("next").onclick = function() {
 	if(next) {
 		if(state == "learn") {
 			document.getElementById("previous").disabled = "";
+			document.getElementById("previous").style["display"] = "";
 			document.getElementById(state).style["display"] = "none";
 			state = "play";
 			document.getElementById(state).style["display"] = "flex";
 			if(!end){
 				next = false;
 				document.getElementById("next").disabled = "true";
+				document.getElementById("next").style["display"] = "none";
 			}
 		}
 		else if(state == "play") {
@@ -103,9 +108,11 @@ document.getElementById("learn-prev").onclick = function() {
 	learnImgIndex = learnImgIndex - 1;
 	if(learnImgIndex == 1) {
 		document.getElementById("learn-prev").disabled = "true";
+		document.getElementById("learn-prev-mobile").disabled = "true";
 	}
 	if(learnImgIndex != 9){
 		document.getElementById("learn-next").disabled = "";
+		document.getElementById("learn-next-mobile").disabled = "";
 	}
 	document.getElementById(learnImgIndex + 1).id = learnImgIndex;
 	document.getElementById(learnImgIndex).src = "./imgsLearn/" + learnImgIndex + ".png";
@@ -116,11 +123,14 @@ document.getElementById("learn-next").onclick = function() {
 	learnImgIndex = learnImgIndex + 1;
 	if(learnImgIndex == 9) {
 		document.getElementById("learn-next").disabled = "true";
+		document.getElementById("learn-next-mobile").disabled = "true";
 		next = true;
 		document.getElementById("next").disabled = "";
+		document.getElementById("next").style["display"] = "";
 	}
 	if(learnImgIndex != 1){
 		document.getElementById("learn-prev").disabled = "";
+		document.getElementById("learn-prev-mobile").disabled = "";
 	}
 
 	document.getElementById(learnImgIndex - 1).id = learnImgIndex;
@@ -147,6 +157,7 @@ document.getElementById("learn-next-mobile").onclick = function() {
 		document.getElementById("learn-next-mobile").disabled = "true";
 		next = true;
 		document.getElementById("next").disabled = "";
+		document.getElementById("next").style["display"] = "";
 	}
 	if(learnImgIndex != 1){
 		document.getElementById("learn-prev-mobile").disabled = "";
@@ -251,6 +262,7 @@ document.getElementById("submit").onclick = function() {
 				next = true;
 				end = true;
 				document.getElementById("next").disabled = "";
+				document.getElementById("next").style["display"] = "";
 			}
 			else {
 				document.getElementById(iterator + 1 + "q").style["background-color"] = "";

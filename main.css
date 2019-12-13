@@ -12,9 +12,9 @@ body {
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E !important; /* Yellow */
-  }
+  /*body {
+    background-color: #F5CF8E !important; // Yellow 
+  }*/
 
   button {
     font-size: 14px !important;
@@ -366,9 +366,9 @@ body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
-  body {
-    background-color: #F09A9D !important; /* Red */
-  }
+  /*body {
+    background-color: #F09A9D !important; // Red
+  }*/
 
   button {
     font-size: 14px !important;
@@ -740,9 +740,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 425px) {
-  body {
-    background-color: black !important; /* Red */
-  }
+  /*body {
+    background-color: black !important; // Black
+  }*/
 
   .content {
     padding-bottom: 15px; 
@@ -767,9 +767,9 @@ body {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF !important; /* Blue */
-  }
+  /*body {
+    background-color: #B2D6FF !important; // Blue 
+  }*/
 
   .button-container-mobile {
     display: none;
@@ -1074,6 +1074,17 @@ body {
 
 
 
+#next:disabled, #next[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#previous:disabled, #previous[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 
 
 #main-nav {
