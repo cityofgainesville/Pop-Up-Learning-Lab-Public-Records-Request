@@ -383,7 +383,7 @@ body {
 
   .cs_bullets label {
     margin: 0 4px;
-    padding: 3px;
+    padding: 4px;
     border-radius: 50%;
     border: .5px solid #c5c5c5;
     background: #c5c5c5;
@@ -398,11 +398,11 @@ body {
   }
 
   #prevIcon{
-    font-size: medium;
+    font-size: x-large;
   }
 
   #nextIcon{
-    font-size: medium;
+    font-size: x-large;
   }
 
 
@@ -729,6 +729,14 @@ body {
 
   .button-container-mobile {
     display: inline-block;
+  }
+
+  #button-container-left-mobile {
+    margin-right: 10px;
+  }
+
+  #button-container-right-mobile {
+    margin-left: 10px;
   }
 
   .cs_bullets {
