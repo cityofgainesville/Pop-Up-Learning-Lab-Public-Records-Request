@@ -745,6 +745,12 @@ body {
     justify-content: center;
 
   }
+
+  #prr {
+    background-color: #face00 !important;
+    color: #044b69;
+    border: 1px solid #face00 !important;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 425px) {
@@ -771,6 +777,36 @@ body {
   #nextIcon{
     font-size: x-large;
   }
+
+  #act-title {
+    text-align: center;
+    font-size: x-large;
+    margin: 20px;
+  }
+
+  .act-btn-container button {
+    font-size: large !important;
+  }
+
+  .act-col {
+    width: 45%;
+    //margin: 2% 0%;
+    margin-bottom: 45px;
+  }
+
+  #act-wrap {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  #prr {
+    background-color: #074B69 !important;
+    color: white;
+    border: 1px solid #074B69 !important;
+}
 }
 
 /* Desktop Styles */
