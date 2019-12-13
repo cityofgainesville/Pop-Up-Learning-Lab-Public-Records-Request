@@ -781,7 +781,7 @@ body {
   #act-title {
     text-align: center;
     font-size: x-large;
-    margin: 20px;
+    margin: 25px;
   }
 
   .act-btn-container button {
@@ -806,6 +806,7 @@ body {
     background-color: #074B69 !important;
     color: white;
     border: 1px solid #074B69 !important;
+    font-weight: 500;
 }
 }
 
