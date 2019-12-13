@@ -31,7 +31,7 @@ body {
 
   .cs_bullets label {
     margin: 0 4px;
-    padding: 3px;
+    padding: 4px;
     border-radius: 50%;
     border: .5px solid #c5c5c5;
     background: #c5c5c5;
@@ -753,7 +753,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 425px) {
+@media only screen and (max-width: 767px) and (min-width: 426px) {
   /*body {
     background-color: black !important; // Black
   }*/
