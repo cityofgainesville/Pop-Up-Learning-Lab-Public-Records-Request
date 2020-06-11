@@ -36,7 +36,13 @@ function stateProgress() {
 }
 
 document.getElementById("back").onclick = function() {
-	history.back();
+	//history.back();
+	window.location.href = 'https://cityofgainesville.github.io/PULL/index.html';
+}
+
+document.getElementById("logo").onclick = function() {
+	//history.back();
+	window.location.href = 'https://cityofgainesville.github.io/PULL/index.html';
 }
 
 document.getElementById("previous").onclick = function() {
@@ -88,7 +94,8 @@ document.getElementById("next").onclick = function() {
 			document.getElementById("next").style["border"] = "1px solid #E52207";
 		}
 		else {
-			history.back();
+			//history.back();
+			window.location.href = 'https://cityofgainesville.github.io/PULL/index.html';
 		}
 		stateProgress();
 		topFunction();

@@ -830,6 +830,10 @@ body {
     object-fit: contain;
   }
 
+  #logo:hover {
+    cursor: pointer;
+  }
+
   .cs_bullets label {
     margin: 0 4px;
     padding: 6px;
